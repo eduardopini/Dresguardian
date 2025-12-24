@@ -1,6 +1,6 @@
-DresGuardian — Privacy-First Telegram Group Management Bot with Built-in AI and DuckDuckGo Web Search
+DresGuardian — A Privacy First Telegram Group Management Bot with Built-in AI and DuckDuckGo Web Search
 
-A powerful, fully self-hosted Telegram bot that puts your privacy first. No logs, no tracking, no third-party data collection — just pure, encrypted functionality.
+A powerful, fully self hosted Telegram bot that puts your privacy first. No logs, no tracking, no third-party data collection just pure encrypted functionality.
 
 Forever Free • Open Source • Zero Compromises on Privacy
 
@@ -8,7 +8,7 @@ Built by DresOS — because your data belongs to you.
 
 # What It Does
 
-DresGuardian combines advanced group moderation with a privacy-respecting AI assistant:
+DresGuardian combines advanced group moderation with a privacy respecting AI assistant:
 
 # AI & Private Search (Available to Everyone)
 - `/ask <question>` — Chat with a powerful AI powered by Cerebras Llama 3.3-70B (no OpenAI, no data harvesting)
