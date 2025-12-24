@@ -99,7 +99,7 @@ DresGuardian combines advanced group moderation with a privacy-respecting AI ass
    sudo apt install git     
    sudo apt install python3     
    git clone https://<i></i>github.com/DresOperatingSystems/Dresguardian    
-   cd DresGuardian
+   cd Dresguardian
                   
 3. create a venv (this is for self hosting and so we dont run into issues)        
    sudo apt update        
@@ -123,4 +123,4 @@ DresGuardian combines advanced group moderation with a privacy-respecting AI ass
 
 anyways we hope you like this one and we wish you a merry christmas from the entire Dres team
 
-this is an upgrade to our dresmodbot
+this is an upgrade to our dresmodbot and please retheme everything to your style if you use Dres style then you have to give credit otherwise you're a skid
