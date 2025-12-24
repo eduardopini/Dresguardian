@@ -95,25 +95,23 @@ DresGuardian combines advanced group moderation with a privacy-respecting AI ass
 # Setup Instructions
 
 1. Clone the repo
-   sudo apt update && sudo apt full-uprgrade -y
-   sudo apt install git
-   sudo apt install python3
-   git clone https://github.com/dresoperatingsystems/DresGuardian.git
-   cd DresGuardian
-   
-2. create a venv (this is for self hosting and so we dont run into issues)
+   sudo apt update && sudo apt full-uprgrade -y     
+   sudo apt install git     
+   sudo apt install python3     
+   git clone https://github.com/DresOperatingSystems/Dresguardian cd DDresGuardian   
+3. create a venv (this is for self hosting and so we dont run into issues)
    sudo apt update 
    sudo apt install python3-venv
    python3 -m venv .venv && source .venv/bin/activate
    
-3. pip install -r requirements.txt
+4. pip install -r requirements.txt
 
-4. sudo apt install nano
+5. sudo apt install nano
    cp .env.example .env
    nano .env
    input your variables
    
-5. self host
+6. self host
    sudo apt install nohup
    nohup python dresguardian.py &
    deactivate
