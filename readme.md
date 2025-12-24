@@ -109,7 +109,7 @@ DresGuardian combines advanced group moderation with a privacy-respecting AI ass
 4. pip install -r requirements.txt      
 
 5. sudo apt install nano      
-   cp .env.example .env      
+   cp .env-sample .env      
    nano .env    
    input your variables     
    
